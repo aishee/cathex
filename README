@@ -1,0 +1,25 @@
+
+CatHex is a Netcat tool that facilitates probing proprietary TCP and UDP services.
+
+## Future
+
+* Ability to enter input sent as hex
+* Listen option to interact with custom-built clients
+* Proper unit tests
+
+## Usage
+
+```
+$ cathex example.com 12345
+������!��'
+FF FB 01 FF FB 03 FF FD 21(!) FF FD 27(')
+
+## Test Server
+Run the test server:
+```
+$ python server.py
+```
+In another terminal, connect to the test server using cathex:
+```
+$ cathex localhost 12345
+```
